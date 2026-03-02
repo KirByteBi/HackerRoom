@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerRoom :: Acceso No Autorizado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hacker-room">
+        <div id="status-bar">
+            <span>🌐 HACKERROOM v1.0 [MODO: INFILTRACIÓN]</span>
+            <span class="blink">⚠️ ACCESO NO AUTORIZADO ⚠️</span>
+            <span>IP: 192.168.95.150</span>
+        </div>
+
+        <div id="output-area" tabindex="0" autofocus>
+            <span class="glitch">[SYSTEM] Conectando al servidor objetivo...</span><br>
+            <span class="glitch">[SYSTEM] Estableciendo túnel SSL... OK</span><br>
+            <span class="glitch">[SYSTEM] Bypass de firewall detectado. Inyectando payload.</span><br>
+            <span class="glitch">[SYSTEM] Listo para recibir comandos. Empieza a escribir...</span><br>
+            <span id="output-text"></span>
+        </div>
+
+        <div id="input-line">
+            <div class="prompt">
+                <i>🔓</i> <span id="prompt-text">root@hackerroom:~$</span>
+            </div>
+            <div id="cursor"></div>
+        </div>
+    </div>
+
+    <div id="control-panel">
+        <div class="info-text">
+            <span>💻 <span id="lines-label">Líneas generadas</span>: <span id="line-count">0</span></span>
+            <span>⚡ <span id="mode-label">Modo</span>: <span id="mode-status">HACK</span></span>
+        </div>
+        <div>
+            <button id="lang-btn">🇪🇸 ESP</button>
+            <button id="clear-btn">🧹 <span id="clear-label">Limpiar pantalla</span></button>
+            <button id="panic-btn">🚨 <span id="panic-label">PANIC</span></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
