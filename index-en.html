@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerRoom · Linux EN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hacker-room">
+        <div id="status-bar">
+            <span>🌐 HACKERROOM v1.0 [LINUX/EN]</span>
+            <span class="blink">⚠️ UNAUTHORIZED ACCESS ⚠️</span>
+            <span>IP: 192.168.95.150</span>
+        </div>
+
+        <div id="output-area" tabindex="0" autofocus>
+            <span class="glitch">[SYSTEM] Connecting to target server...</span><br>
+            <span class="glitch">[SYSTEM] Establishing SSL tunnel... OK</span><br>
+            <span class="glitch">[SYSTEM] Firewall bypass detected. Injecting payload.</span><br>
+            <span class="glitch">[SYSTEM] Ready for commands. Start typing...</span><br>
+            <span id="output-text"></span>
+        </div>
+
+        <div id="input-line">
+            <div class="prompt">
+                <i>🔓</i> <span id="prompt-text">root@hackerroom:~$</span>
+            </div>
+            <div id="cursor"></div>
+        </div>
+    </div>
+
+    <div id="control-panel">
+        <div class="info-text">
+            <span>💻 <span id="lines-label">Lines generated</span>: <span id="line-count">0</span></span>
+            <span>⚡ <span id="mode-label">Mode</span>: <span id="mode-status">HACK</span></span>
+        </div>
+        <div style="display: flex; gap: 5px;">
+            <a href="index.html"><button style="background: #1a4f3a;">🇪🇸 ESPAÑOL</button></a>
+            <a href="java.html"><button style="background: #4f1a3a;">☕ JAVA ES</button></a>
+            <a href="java-en.html"><button style="background: #b87333;">☕ JAVA EN</button></a>
+            <button id="clear-btn">🧹 <span id="clear-label">Clear screen</span></button>
+            <button id="panic-btn">🚨 <span id="panic-label">PANIC</span></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

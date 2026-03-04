@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerRoom · Java ES</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #status-bar span:first-child::after {
+            content: " [JAVA/ES]";
+            color: #f57c42;
+            font-size: 0.8rem;
+            margin-left: 5px;
+        }
+        #output-area {
+            font-family: 'Courier New', monospace;
+            border-left: 3px solid #b87333;
+        }
+        .prompt i {
+            color: #b87333;
+            text-shadow: 0 0 8px #b87333;
+        }
+    </style>
+</head>
+<body>
+    <div id="hacker-room">
+        <div id="status-bar">
+            <span>☕ HACKERROOM [JAVA ES]</span>
+            <span class="blink">⚠️ MODO EMPRESARIAL ⚠️</span>
+            <span>IP: 192.168.95.150</span>
+        </div>
+
+        <div id="output-area" tabindex="0" autofocus>
+            <span class="glitch">[JAVA] Inicializando JVM...</span><br>
+            <span class="glitch">[JAVA] Cargando clases... OK</span><br>
+            <span class="glitch">[JAVA] Preparando exploits...</span><br>
+            <span class="glitch">[JAVA] Listo. Empieza a escribir...</span><br>
+            <span id="output-text"></span>
+        </div>
+
+        <div id="input-line">
+            <div class="prompt">
+                <i>☕</i> <span id="prompt-text">java -cp . HackerRoom></span>
+            </div>
+            <div id="cursor"></div>
+        </div>
+    </div>
+
+    <div id="control-panel">
+        <div class="info-text">
+            <span>📊 <span id="lines-label">Líneas generadas</span>: <span id="line-count">0</span></span>
+            <span>⚡ <span id="mode-label">Modo</span>: <span id="mode-status">JAVA</span></span>
+        </div>
+        <div style="display: flex; gap: 5px;">
+            <a href="index.html"><button style="background: #1a4f3a;">🇪🇸 LINUX ES</button></a>
+            <a href="index-en.html"><button style="background: #4287f5;">🇬🇧 LINUX EN</button></a>
+            <a href="java-en.html"><button style="background: #b87333;">☕ JAVA EN</button></a>
+            <button id="clear-btn">🧹 <span id="clear-label">Limpiar pantalla</span></button>
+            <button id="panic-btn">🚨 <span id="panic-label">PANIC</span></button>
+        </div>
+    </div>
+
+    <script src="scripts-java.js"></script>
+</body>
+</html>
